@@ -1,0 +1,97 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Instagram Analyzer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h1 class="text-center mt-5">Instagram Followers Analyzer</h1>
+                <form action="/analyze" method="post" enctype="multipart/form-data" class="mt-4">
+                    <div class="form-group">
+                        <label for="followers">Followers JSON File:</label>
+                        <input type="file" name="followers" id="followers" accept=".json" class="form-control-file"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="following">Following JSON File:</label>
+                        <input type="file" name="following" id="following" accept=".json" class="form-control-file"
+                            required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-chart-bar"></i> Analyze
+                    </button>
+                </form>
+
+                <!-- Instructions Section -->
+                <div class="instructions mt-5">
+                    <h2>How to Obtain Your Instagram Data</h2>
+                    <p>Follow these steps to download your followers and following JSON files from Instagram:</p>
+
+                    <h3>Using the Instagram Mobile App</h3>
+                    <ol>
+                        <li>Open the Instagram app and log in to your account.</li>
+                        <li>Tap your profile picture in the bottom right to go to your profile.</li>
+                        <li>Tap the three horizontal lines in the top right corner.</li>
+                        <li>Select <strong>"Settings and privacy"</strong>.</li>
+                        <li>Scroll down to <strong>"Your activity and information"</strong> and tap <strong>"Download
+                                your information"</strong>.</li>
+                        <li>Select <strong>"JSON"</strong> as the format and tap <strong>"Next"</strong>.</li>
+                        <li>Confirm your email address and tap <strong>"Submit Request"</strong>.</li>
+                        <li>Enter your Instagram password to verify your identity.</li>
+                        <li>Wait for an email from Instagram with the subject <em>"Your Instagram Data"</em>.</li>
+                        <li>Open the email and click on <strong>"Download Data"</strong>.</li>
+                        <li>Download and unzip the file to access your data.</li>
+                    </ol>
+
+                    <h3>Using Instagram on a Web Browser</h3>
+                    <ol>
+                        <li>Go to <a href="https://www.instagram.com" target="_blank">Instagram.com</a> and log in.</li>
+                        <li>Click your profile picture in the top right and select <strong>"Profile"</strong>.</li>
+                        <li>Click the gear icon next to <strong>"Edit Profile"</strong> to access settings.</li>
+                        <li>Click on <strong>"Privacy and Security"</strong>.</li>
+                        <li>Scroll down to <strong>"Data Download"</strong> and click <strong>"Request
+                                Download"</strong>.</li>
+                        <li>Select <strong>"JSON"</strong> as the format and click <strong>"Next"</strong>.</li>
+                        <li>Confirm your email address and enter your Instagram password.</li>
+                        <li>Wait for an email from Instagram with the subject <em>"Your Instagram Data"</em>.</li>
+                        <li>Open the email and click on <strong>"Download Data"</strong>.</li>
+                        <li>Download and unzip the file to access your data.</li>
+                    </ol>
+
+                    <h3>Locating the Followers and Following Files</h3>
+                    <ol>
+                        <li>After unzipping the downloaded file, open the folder.</li>
+                        <li>Navigate to the <strong>"followers_and_following"</strong> directory.</li>
+                        <li>Locate the files named <strong>"followers.json"</strong> and
+                            <strong>"following.json"</strong>.</li>
+                    </ol>
+
+                    <p>Once you have these files, you can upload them above to analyze your Instagram followers.</p>
+                </div>
+            </div>
+
+            <!-- Include Bootstrap JS (Optional, for interactivity) -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
