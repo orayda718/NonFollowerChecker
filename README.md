@@ -6,6 +6,8 @@ An application that allows users to upload their Instagram `followers.json` and 
 
 Check out the live application here: [Instagram Followers Analyzer](https://nonfollowerchecker.onrender.com)
 
+**Note**: The live demo link works, but it may take a while to load initially due to Render's free plan limitations. Please be patient; the application should load within 30 seconds.
+
 ## Table of Contents
 
 - [Features](#features)
