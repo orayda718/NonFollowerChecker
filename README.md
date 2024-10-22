@@ -16,10 +16,7 @@ Check out the live application here: [Instagram Followers Analyzer](https://nonf
   - [Installation](#installation)
 - [Usage](#usage)
   - [How to Obtain Instagram Data](#how-to-obtain-instagram-data)
-- [Deployment](#deployment)
 - [Built With](#built-with)
-- [Contributing](#contributing)
-- [License](#license)
 - [Acknowledgments](#acknowledgments)
 
 ## Features
