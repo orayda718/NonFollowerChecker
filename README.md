@@ -108,29 +108,6 @@ Check out the live application here: [Instagram Followers Analyzer](https://nonf
 
    - The application will display a list of users you are following who are not following you back.
 
-## Deployment
-
-The application can be deployed using platforms like Render, Railway, or Heroku.
-
-### Deploying to Render
-
-1. **Create an Account on Render**
-
-   - Sign up at [Render.com](https://render.com).
-
-2. **Connect Your Repository**
-
-   - Create a new Web Service and connect your GitHub repository.
-
-3. **Configure Build and Start Commands**
-
-   - Build Command: `npm install`
-   - Start Command: `npm start`
-
-4. **Deploy**
-
-   - Follow the on-screen instructions to deploy your application.
-
 ## Built With
 
 - [Node.js](https://nodejs.org/) - JavaScript runtime environment
